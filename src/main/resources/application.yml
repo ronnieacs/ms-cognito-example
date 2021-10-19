@@ -1,0 +1,6 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://cognito-idp.${AWS_REGION}.amazonaws.com/${AWS_COGNITO_USER_POOL}/.well-known/jwks.json
